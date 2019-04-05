@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Layne</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="location_permission_denied">Layne requires location permission to enable the app. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Layne\' > Permissions.</string>
+    <string name="permission_required_toast">Location permission is required for the use of Layne.</string>
+    <string name="go_button">Go!</string>
+
+    <string name="destination_title">Where do you want to go?</string>
+
+    <string name="start">Start</string>
+
+    <string name="end">End</string>
+
+    <string name="next">Next</string>
+
+    <string name="time_tmp_tag">time</string>
+
+    <string name="got_it">Got it!</string>
+
+    <string name="tutorial">Tutorial</string>
+
+    <string name="preferences">Preferences</string>
+
+    <string name="safety">Safety</string>
+    <string name="Want_to_start">Want to start your ride? \n\t-tap on the map or \n   hit Go!</string>
+    <string name="Want_to_place">Want to place a marker?\n\t   -tap and hold, this\n   opens up a radial\n   menu where you can\n   slide your fingers to\n   each sub-menu</string>
+    <string name="Want_this_tut">Want this tutorial again?\n\t   -tap the ? in the\n   top right!</string>
+    <string name="Ellipses">&#8942;</string>
+    <string name="routeOverview">Route Overview Doggo ipsum most angery pupper I have ever seen very hand that feed shibe boof
+        wow such tempt big ol pupper, long doggo what a nice floof. Shoober doing me a frighten fluffer borkdrive shoober, many pats thicc.
+        Shooberino ruff you are doing me a frighten borkf super chub fat boi smol borking doggo with a long snoot for pats you are doin me a concern,
+        I am bekom fat length boy wrinkler the neighborhood pupper puggo.</string>
+
+</resources>

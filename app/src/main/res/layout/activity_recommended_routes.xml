@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/RMTopTV"
+        android:layout_width="314dp"
+        android:layout_height="52dp"
+        android:layout_above="@+id/RMTurtleIV"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="53dp"
+        android:text="  Recommended"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/RMTurtleIV"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/RMPB1"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="37dp"
+        android:layout_toStartOf="@+id/RMCationIV"
+        android:layout_toLeftOf="@+id/RMCationIV"
+        android:foreground="@drawable/slowturtle"
+        app:srcCompat="@drawable/slowturtle" />
+
+    <ImageView
+        android:id="@+id/RMTurtleIV2"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/RMPB1"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="77dp"
+        android:layout_toStartOf="@+id/RMCationIV"
+        android:layout_toLeftOf="@+id/RMCationIV"
+        android:foreground="@drawable/fastrabbit"
+        app:srcCompat="@drawable/slowturtle" />
+
+    <ImageView
+        android:id="@+id/RMClockIV"
+        android:layout_width="64dp"
+        android:layout_height="61dp"
+        android:layout_above="@+id/RMRadio1"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="41dp"
+        android:layout_toStartOf="@+id/RMTurtleIV"
+        android:layout_toLeftOf="@+id/RMTurtleIV"
+        android:elevation="20dp"
+        android:foreground="@drawable/clock"
+        app:srcCompat="@drawable/clock" />
+
+    <ImageView
+        android:id="@+id/RMRightTurnIV"
+        android:layout_width="72dp"
+        android:layout_height="67dp"
+        android:layout_above="@+id/RMRadio1"
+        android:layout_alignEnd="@+id/RMClockIV"
+        android:layout_alignRight="@+id/RMClockIV"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:layout_marginBottom="35dp"
+        android:elevation="20dp"
+        android:foreground="@drawable/rightturnsign"
+        app:srcCompat="@drawable/rightturnsign" />
+
+    <ImageView
+        android:id="@+id/RMCationIV"
+        android:layout_width="73dp"
+        android:layout_height="66dp"
+        android:layout_above="@+id/RMPB2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="43dp"
+        android:foreground="@drawable/cautionsign"
+        app:srcCompat="@drawable/cautionsign" />
+
+    <Button
+        android:id="@+id/RMEllipses1Button"
+        android:layout_width="43dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/RMEllipses2Button"
+        android:layout_alignEnd="@+id/RMTopTV"
+        android:layout_alignRight="@+id/RMTopTV"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/Ellipses"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/RMEllipses2Button"
+        android:layout_width="43dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/RMEllipses3Button"
+        android:layout_alignEnd="@+id/RMTopTV"
+        android:layout_alignRight="@+id/RMTopTV"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/Ellipses"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/RMEllipses3Button"
+        android:layout_width="43dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/RMGoButton"
+        android:layout_alignEnd="@+id/RMTopTV"
+        android:layout_alignRight="@+id/RMTopTV"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="61dp"
+        android:text="@string/Ellipses"
+        android:textSize="30sp" />
+
+    <RadioButton
+        android:id="@+id/RMRadio1"
+        android:layout_width="294dp"
+        android:layout_height="66dp"
+        android:layout_above="@+id/RMRadio2"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="29dp"
+        android:layout_toStartOf="@+id/RMEllipses1Button"
+        android:layout_toLeftOf="@+id/RMEllipses1Button" />
+
+    <RadioButton
+        android:id="@+id/RMRadio2"
+        android:layout_width="294dp"
+        android:layout_height="66dp"
+        android:layout_above="@+id/RMRadio3"
+        android:layout_alignEnd="@+id/RMPB4"
+        android:layout_alignRight="@+id/RMPB4"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="51dp" />
+
+    <RadioButton
+        android:id="@+id/RMRadio3"
+        android:layout_width="294dp"
+        android:layout_height="66dp"
+        android:layout_alignEnd="@+id/RMPB5"
+        android:layout_alignRight="@+id/RMPB5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="152dp" />
+
+    <TextView
+        android:id="@+id/RMRoute1TV"
+        android:layout_width="149dp"
+        android:layout_height="37dp"
+        android:layout_alignEnd="@+id/RMPB1"
+        android:layout_alignRight="@+id/RMPB1"
+        android:layout_alignBottom="@+id/RMRadio1"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="11dp"
+        android:text="13.2mi   52min"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/RMheader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/gray"
+        android:clickable="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textScaleX="2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/RMRoute2TV"
+        android:layout_width="149dp"
+        android:layout_height="37dp"
+        android:layout_alignEnd="@+id/RMPB3"
+        android:layout_alignRight="@+id/RMPB3"
+        android:layout_alignBottom="@+id/RMRadio2"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginBottom="10dp"
+        android:text="12mi   45min"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/RMRoute3TV"
+        android:layout_width="149dp"
+        android:layout_height="37dp"
+        android:layout_alignEnd="@+id/RMPB6"
+        android:layout_alignRight="@+id/RMPB6"
+        android:layout_alignBottom="@+id/RMRadio3"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="7dp"
+        android:text="12.5mi   42min"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/RMGoButton"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Go" />
+
+    <ProgressBar
+        android:id="@+id/RMPB1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_above="@+id/RMPB3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+        android:layout_marginBottom="33dp"
+        android:minWidth="50dp"
+        android:progress="25"
+        android:rotation="270" />
+
+    <ProgressBar
+        android:id="@+id/RMPB2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_above="@+id/RMPB4"
+        android:layout_alignEnd="@+id/RMEllipses1Button"
+        android:layout_alignRight="@+id/RMEllipses1Button"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="34dp"
+        android:minWidth="50dp"
+        android:progress="50"
+        android:rotation="270" />
+
+    <ProgressBar
+        android:id="@+id/RMPB3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_above="@+id/RMPB6"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="55dp"
+        android:layout_toStartOf="@+id/RMPB4"
+        android:layout_toLeftOf="@+id/RMPB4"
+        android:minWidth="50dp"
+        android:progress="10"
+        android:rotation="270" />
+
+    <ProgressBar
+        android:id="@+id/RMPB4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_above="@+id/RMPB5"
+        android:layout_alignEnd="@+id/RMEllipses2Button"
+        android:layout_alignRight="@+id/RMEllipses2Button"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="48dp"
+        android:minWidth="50dp"
+        android:progress="40"
+        android:rotation="270" />
+
+    <ProgressBar
+        android:id="@+id/RMPB5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_above="@+id/RMGoButton"
+        android:layout_alignEnd="@+id/RMEllipses3Button"
+        android:layout_alignRight="@+id/RMEllipses3Button"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="65dp"
+        android:minWidth="50dp"
+        android:progress="60"
+        android:rotation="270" />
+
+    <ProgressBar
+        android:id="@+id/RMPB6"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="156dp"
+        android:layout_toStartOf="@+id/RMPB5"
+        android:layout_toLeftOf="@+id/RMPB5"
+        android:minWidth="50dp"
+        android:progress="5"
+        android:rotation="270" />
+
+</RelativeLayout>

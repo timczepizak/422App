@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/menu_app_name">
+
+        <Button
+            android:id="@+id/MapsmenuButton"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_menu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/MapsmenuButton"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:text="@string/preferences"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="347dp"
+        android:layout_height="179dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/gray_bordered_rectangle">
+
+        <TextView
+            android:id="@+id/PrefSafetyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/safety"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:background="@drawable/black_rectangle_border"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/PrefSafetyText"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <CheckBox
+                        android:id="@+id/PrefLessTrafficCB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Less Traffic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <CheckBox
+                        android:id="@+id/PrefProtectCB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Protected Lanes" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <CheckBox
+                        android:id="@+id/PrefWellLitCB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Well Lit"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <CheckBox
+                        android:id="@+id/PrefHazCB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Fewer Hazards" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="347dp"
+        android:layout_height="179dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="167dp"
+        android:background="@drawable/gray_bordered_rectangle">
+        <TextView
+            android:id="@+id/PrefEfficiencyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Efficiency"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:background="@drawable/black_rectangle_border"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/PrefEfficiencyText"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <CheckBox
+                    android:id="@+id/PrefFewerTurnsCB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fewer Turns" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <CheckBox
+                    android:id="@+id/PrefFewerIntCB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fewer Intersections" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <CheckBox
+                    android:id="@+id/PrefFewerStopsCB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fewer Stops" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/PrefSaveButton"
+        android:layout_width="315dp"
+        android:layout_height="89dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/gray_bordered_rectangle"
+        android:text="Save" />
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/MapsgoButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="@string/go_button"
+        android:textSize="25sp" />
+
+        <!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/search_input"
+            android:background="@null"
+            android:hint="Start"/>
+        -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/menu_help">
+        <Button
+            android:id="@+id/MapsmenuButton"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:elevation="10dp"
+           android:background="@drawable/ic_menu" />
+
+        <Button
+            android:id="@+id/MapshelpButton"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_help"
+            android:elevation="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="invisible"
+        android:id="@+id/help_layout">
+
+        <Button
+            android:id="@+id/HelpGotItButton"
+            android:layout_width="177dp"
+            android:layout_height="71dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="47dp"
+            android:text="@string/got_it"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="308dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="523dp"
+            android:text="@string/tutorial"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/HelpWantRideTV"
+            android:layout_width="308dp"
+            android:layout_height="107dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="415dp"
+            android:text="@string/Want_to_start"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/HelpWantMarkerTV"
+            android:layout_width="308dp"
+            android:layout_height="113dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="297dp"
+            android:text="@string/Want_to_place"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/HelpWantTutTV"
+            android:layout_width="308dp"
+            android:layout_height="164dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="132dp"
+            android:text="@string/Want_this_tut"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>
