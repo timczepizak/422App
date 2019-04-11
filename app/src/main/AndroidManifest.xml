@@ -53,6 +53,10 @@
             android:label="@string/app_name">
         </activity>
 
+        <activity android:name=".FakeActivity"
+            android:label="Layne">
+        </activity>
+
         <activity
             android:name=".MapsActivity"
             android:label="@string/app_name"

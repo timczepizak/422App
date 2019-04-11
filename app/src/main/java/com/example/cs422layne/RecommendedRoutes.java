@@ -19,7 +19,7 @@ public class RecommendedRoutes extends Activity {
         goBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(RecommendedRoutes.this, MapsActivity.class));
+                startActivity(new Intent(RecommendedRoutes.this, FakeActivity.class));
             }
 
         });

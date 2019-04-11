@@ -11,7 +11,7 @@
         android:id="@+id/menu_app_name">
 
         <Button
-            android:id="@+id/MapsmenuButton"
+            android:id="@+id/FakesmenuButton"
             android:layout_width="45dp"
             android:layout_height="match_parent"
             android:background="@drawable/ic_menu" />
@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@id/MapsmenuButton"
+            android:layout_toRightOf="@id/FakesmenuButton"
             android:autoSizeTextType="uniform"
             android:fontFamily="sans-serif-smallcaps"
             android:textAllCaps="true"
