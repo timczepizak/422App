@@ -36,16 +36,16 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="68dp"
         android:layout_above="@+id/textView9"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="249dp"
-        android:layout_marginRight="249dp"
-        android:layout_marginBottom="-3dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:layout_marginBottom="2dp"
         android:text="Overview"
-        android:textSize="24sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textView9"
@@ -62,15 +62,16 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="210dp"
-        android:layout_height="329dp"
+        android:layout_width="219dp"
+        android:layout_height="292dp"
         android:layout_above="@+id/ROGoButton"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="148dp"
-        android:layout_marginRight="148dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/routeOverview" />
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/routeOverview"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/ROBackButton"
@@ -95,5 +96,25 @@
         android:layout_marginRight="175dp"
         android:layout_marginBottom="38dp"
         android:text="Go!" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="146dp"
+        android:layout_height="127dp"
+        android:layout_above="@+id/progressBar2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-138dp"
+        app:srcCompat="@drawable/icons8road96" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="228dp"
+        android:layout_height="6dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="430dp"
+        android:background="@color/gray" />
 
 </RelativeLayout>

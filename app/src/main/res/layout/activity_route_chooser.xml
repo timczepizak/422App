@@ -52,115 +52,104 @@
         android:gravity="center"/>
 
     <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_below="@id/destination_title"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
         android:id="@+id/start_destination"
+        android:layout_width="303dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/destination_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
         android:background="@color/gray">
+
         <TextView
-            android:layout_width="64dp"
-            android:layout_height="match_parent"
-            android:text="@string/start"
-            android:autoSizeTextType="uniform"
-            android:textSize="30sp"
-            android:gravity="center"
             android:id="@+id/start_text"
-            android:background="@drawable/black_rectangle_border"
-            />
-        <AutoCompleteTextView
-            android:layout_width="match_parent"
+            android:layout_width="64dp"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@+id/start_text"
-            android:layout_centerVertical="true"
-            android:textSize="15sp"
-            android:textColor="#000"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/black_rectangle_border"
+            android:gravity="center"
+            android:text="@string/start"
+            android:textSize="30sp" />
+
+        <AutoCompleteTextView
             android:id="@+id/start_dest_input"
-            android:background="@drawable/white_bordered_rectangle"
-            android:imeOptions="actionSearch"
-            android:hint="Where from?"/>/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_below="@id/start_destination"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/end_destination"
-        android:background="@color/gray">
-        <TextView
-            android:layout_width="64dp"
-            android:layout_height="match_parent"
-            android:text="@string/end"
-            android:autoSizeTextType="uniform"
-            android:textSize="30sp"
-            android:gravity="center"
-            android:id="@+id/end_text"
-            android:background="@drawable/black_rectangle_border"
-            />
-
-        <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@+id/end_text"
-            android:textSize="15sp"
-            android:textColor="#000"
-            android:id="@+id/end_dest_input"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/start_text"
             android:background="@drawable/white_bordered_rectangle"
+            android:hint="Where from?"
             android:imeOptions="actionSearch"
-            android:hint="Where to?"/>/>
+            android:textColor="#000"
+            android:textSize="15sp" />/>
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_below="@id/end_destination"
-        android:layout_marginTop="30dp"
+        android:id="@+id/end_destination"
+        android:layout_width="302dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/start_destination"
         android:layout_centerHorizontal="true"
-        android:id="@+id/time_destination"
+        android:layout_marginTop="66dp"
         android:background="@color/gray">
+
         <TextView
+            android:id="@+id/end_text"
             android:layout_width="64dp"
             android:layout_height="match_parent"
-            android:text="@string/time_tmp_tag"
             android:autoSizeTextType="uniform"
-            android:textSize="30sp"
+            android:background="@drawable/black_rectangle_border"
             android:gravity="center"
-            android:id="@+id/time_text"
-            />
+            android:text="@string/end"
+            android:textSize="30sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/end_dest_input"
+            android:layout_width="234dp"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/end_text"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/end_text"
+            android:background="@drawable/white_bordered_rectangle"
+            android:hint="Where to?"
+            android:imeOptions="actionSearch"
+            android:textColor="#000"
+            android:textSize="15sp" />/>
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="90dp"
-        android:layout_alignParentBottom="true"
-        android:paddingRight="10dp"
-        android:paddingLeft="10dp"
-        android:layout_marginBottom="60dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/gray_bordered_rectangle"
         android:id="@+id/next_bike"
-        android:clickable="true">
+        android:layout_width="308dp"
+        android:layout_height="114dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="137dp"
+        android:background="@drawable/gray_bordered_rectangle"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
         <TextView
+            android:id="@+id/next"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:text="@string/next"
-            android:textSize="30sp"
             android:gravity="center"
-            android:id="@+id/next"
-            />
+            android:text="@string/next"
+            android:textSize="30sp" />
+
         <FrameLayout
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_toRightOf="@id/next"
-            android:background="@drawable/bicycle"/>
+            android:background="@drawable/bicycle" />
 
         <Button
             android:id="@+id/RCNextButton"
             android:layout_width="290dp"
             android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
             android:alpha="0"
             android:text="Button" />
     </RelativeLayout>

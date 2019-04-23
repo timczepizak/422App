@@ -28,7 +28,7 @@ public class RouteOverview extends Activity {
         roGoButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(RouteOverview.this, MapsActivity.class));
+                startActivity(new Intent(RouteOverview.this, FakeActivity.class));
             }
 
         });
