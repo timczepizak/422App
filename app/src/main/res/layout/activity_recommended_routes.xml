@@ -193,8 +193,8 @@
         android:layout_alignBottom="@+id/RMRadio2"
         android:layout_marginEnd="53dp"
         android:layout_marginRight="53dp"
-        android:layout_marginBottom="10dp"
-        android:text="12mi   45min"
+        android:layout_marginBottom="14dp"
+        android:text="12mi      45min"
         android:textSize="18sp" />
 
     <TextView
@@ -311,5 +311,41 @@
         android:minWidth="50dp"
         android:progress="5"
         android:rotation="270" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="3dp"
+        android:layout_height="413dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="118dp"
+        android:background="@color/gray" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="3dp"
+        android:layout_height="413dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="119dp"
+        android:background="@color/gray" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="3dp"
+        android:layout_height="413dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="117dp"
+        android:background="@color/gray" />
 
 </RelativeLayout>
